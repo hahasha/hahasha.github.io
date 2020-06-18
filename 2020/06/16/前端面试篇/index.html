@@ -16,14 +16,14 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="HTML viewport 元信息标签（head、title、meta）的作用 HTML5离线缓存原理  CSS 盒模型 说一说BFC display和opacity的区别？ css选择器优先级确定 css伪类和伪元素 有哪些样式可以被继承？ 什么是文档流？脱离文档流的方式都有哪些？它们有什么不同？ 外边距折叠是什么意思？ 水平垂直居中的方式有哪些？都有哪些优缺点？ 绝对定位坐标的参考值是谁？宽度">
+  <meta name="description" content="HTML viewport 元信息标签（head、title、meta）的作用 HTML5离线缓存原理  CSS 盒模型   在浏览器中，每一个DOM结点渲染后，都会在屏幕上占用一个方形区域，这个方形区域就是盒子，这种渲染方式就称为盒模型。盒模型一共有四类属性，分别是width&#x2F;height、padding、border和margin。   说一说BFC display和opacity的区别？ c">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端面试篇">
 <meta property="og:url" content="http://yoursite.com/2020/06/16/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E7%AF%87/index.html">
 <meta property="og:site_name" content="">
-<meta property="og:description" content="HTML viewport 元信息标签（head、title、meta）的作用 HTML5离线缓存原理  CSS 盒模型 说一说BFC display和opacity的区别？ css选择器优先级确定 css伪类和伪元素 有哪些样式可以被继承？ 什么是文档流？脱离文档流的方式都有哪些？它们有什么不同？ 外边距折叠是什么意思？ 水平垂直居中的方式有哪些？都有哪些优缺点？ 绝对定位坐标的参考值是谁？宽度">
+<meta property="og:description" content="HTML viewport 元信息标签（head、title、meta）的作用 HTML5离线缓存原理  CSS 盒模型   在浏览器中，每一个DOM结点渲染后，都会在屏幕上占用一个方形区域，这个方形区域就是盒子，这种渲染方式就称为盒模型。盒模型一共有四类属性，分别是width&#x2F;height、padding、border和margin。   说一说BFC display和opacity的区别？ c">
 <meta property="article:published_time" content="2020-06-16T08:23:19.000Z">
-<meta property="article:modified_time" content="2020-06-17T05:27:13.129Z">
+<meta property="article:modified_time" content="2020-06-18T01:04:04.304Z">
 <meta property="article:author" content="sasa">
 <meta property="article:tag" content="面试">
 <meta name="twitter:card" content="summary">
@@ -214,7 +214,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-17 13:27:13" itemprop="dateModified" datetime="2020-06-17T13:27:13+08:00">2020-06-17</time>
+                <time title="修改时间：2020-06-18 09:04:04" itemprop="dateModified" datetime="2020-06-18T09:04:04+08:00">2020-06-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -244,14 +244,34 @@
 </ul>
 <h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><ul>
 <li>盒模型</li>
+</ul>
+<blockquote>
+<p>在浏览器中，每一个DOM结点渲染后，都会在屏幕上占用一个方形区域，这个方形区域就是盒子，这种渲染方式就称为盒模型。<br>盒模型一共有四类属性，分别是width/height、padding、border和margin。</p>
+</blockquote>
+<ul>
 <li>说一说BFC</li>
 <li>display和opacity的区别？</li>
 <li>css选择器优先级确定</li>
 <li>css伪类和伪元素</li>
 <li>有哪些样式可以被继承？</li>
 <li>什么是文档流？脱离文档流的方式都有哪些？它们有什么不同？</li>
+</ul>
+<blockquote>
+<p>所谓文档流就是DOM结点排版布局过程中，元素会自动从左往右，从上往下的流式排列。在正常布局下，块级元素会自己占一行，有几个块级元素就会有几行。而行内元素才会从左到右排列。<br>absolute、fixed和浮动<br>浮动和绝对定位都会脱离文档流，但是使用float脱离文档流时，其他盒子会无视这个元素，但是盒子内的文本依然会为这个元素让出位置，环绕在周围，而对于使用absolute脱离文档流时，其他盒子与盒子内的文本都会无视它。</p>
+</blockquote>
+<ul>
 <li>外边距折叠是什么意思？</li>
+</ul>
+<blockquote>
+<p>如果两个盒子都设置了外边距margin，在排列时并不会把两个盒子margin值的和作为它们的间距，而是取两者中的较大值。</p>
+</blockquote>
+<ul>
 <li>水平垂直居中的方式有哪些？都有哪些优缺点？</li>
+</ul>
+<blockquote>
+<p><span class="pink">元素定高：</span><br>（1）absolute + 负margin<br>（2）absolute + 各个方向的都是0 + margin auto<br><span class="pink">元素不定高：</span><br>（1）absolute + transform<br>（2）table-cell +  text-align +  vertical-align<br>（3）flex</p>
+</blockquote>
+<ul>
 <li>绝对定位坐标的参考值是谁？宽度和高度的参考值又是谁？</li>
 <li>清除浮动的方法有哪些？</li>
 <li>css模块化方案？如何配置按需加载？如何防止css阻塞渲染？</li>
@@ -261,23 +281,72 @@
 <li>逻辑像素和物理像素的区别？</li>
 <li>响应式布局方案有哪些？</li>
 <li>em 和 rem 这两种相对单位有什么不同？</li>
+</ul>
+<blockquote>
+<p><span class="pink">em 是相对于当前元素字体尺寸。</span>举例来说，如果当前元素的字体是20px，那么当前元素中的1em就等于20px。<br><span class="pink">rem（即root em），是以根节点的字体大小作为基准值进行长度计算。</span>一般认为网页中的根节点是 html 元素，所以采用 html 元素的 font-size 来做屏幕适配。</p>
+</blockquote>
+<ul>
 <li>什么是 css-reset？为什么要做 css-reset？</li>
 <li>你平时写样式会遵从哪些规范？举几个例子</li>
 </ul>
 <h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><h4 id="JS基础"><a href="#JS基础" class="headerlink" title="JS基础"></a>JS基础</h4><h5 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h5><ul>
 <li>js数据类型有哪些？</li>
+</ul>
+<blockquote>
+<p>Number、String、Boolean、Undefined、Null、Symbol、Object</p>
+</blockquote>
+<ul>
 <li>typeof 能返回哪几种数据类型？</li>
-<li>值类型和引用类型的区别？</li>
+</ul>
+<blockquote>
+<p>number、string、boolean、undefined、symbol<br>object<br>function</p>
+</blockquote>
+<ul>
+<li>基本类型和引用类型的区别？</li>
+</ul>
+<blockquote>
+<p>基本类型：<br>（1）值不可改变；<br>（2）基本类型的比较是值的比较；<br>（3）值存在栈中。<br>引用类型：<br>（1）值是可变的，可以添加、删除属性；<br>（2）引用类型的比较是引用地址的比较；<br>（3）引用地址存储在栈中，实际数据存放在堆中；</p>
+</blockquote>
+<ul>
 <li>深拷贝和浅拷贝的区别？</li>
+</ul>
+<blockquote>
+<p><span class="pink">浅拷贝</span>：浅拷贝是按位拷贝对象，它会创建一个新对象，这个对象有着原始对象属性值的一份精确拷贝。如果属性是基本类型，拷贝的就是基本类型的值；如果属性是引用类型，拷贝的就是内存地址。数组的<span class="pink">concat </span>和 <span class="pink">slice </span>方法是浅拷贝，对象的<span class="pink">Object.assign</span>也是浅拷贝。<br><span class="pink">深拷贝</span>：会开辟一个新的堆空间，保存拷贝的数据，另外生成一个新的引用地址赋给对象名。可以使用<span class="pink">JSON.stringify、JSON.parse</span>实现深拷贝。或者递归实现。</p>
+</blockquote>
+<ul>
 <li>说一下常见的隐式类型转换</li>
-<li>判断数据类型的方式有哪些？</li>
+</ul>
+<blockquote>
+<p>if、==、逻辑运算、+拼接字符串</p>
+</blockquote>
+<ul>
 <li>如何准确判断数组类型？</li>
+</ul>
+<blockquote>
+<p>（1）instanceof（检测原理是判断对象的原型链是否指向其构造函数的prototype）<br>（2）constructor（arr.constructor === Array）<br>（3）Object.prototype.toString（Object.prototype.toString.call(arr) === ‘[object Array]’ ）<br>（4）Array.isArray()</p>
+</blockquote>
+<ul>
 <li>出现小数精度丢失的原因？</li>
 </ul>
 <h5 id="原型-amp-原型链"><a href="#原型-amp-原型链" class="headerlink" title="原型&amp;原型链"></a>原型&amp;原型链</h5><ul>
 <li>怎么理解原型设计模式？</li>
+</ul>
+<blockquote>
+<p>原型的作用就是给构造函数的每一个对象添加统一的方法，在原型中定义的方法和属性都是被所以实例对象所共享。</p>
+</blockquote>
+<ul>
 <li>js中的原型规则</li>
+</ul>
+<blockquote>
+<p>（1）所有的引用类型，都有一个__proto__ 属性；<br>（2）所有函数，都具有一个prototype属性；<br>（3）所有的引用类型的_proto_指向其构造函数的prototype；<br>（4）当试图获取对象的某个属性时，如果这个对象本身没有这个属性，那么会去它的_proto_（即它的构造函数的prototype）中去寻找；</p>
+</blockquote>
+<ul>
 <li>说一说实现继承的几种方式以及它们的优缺点？</li>
+</ul>
+<blockquote>
+<p><span class="pink">借用构造函数</span><br><span class="pink">组合继承</span><br><span class="pink">原型继承</span></p>
+</blockquote>
+<ul>
 <li>instanceof 的实现原理？手动实现instanceof</li>
 <li>描述new一个对象的过程？手动实现一个new操作符</li>
 </ul>
@@ -285,16 +354,46 @@
 <li>词法作用域和动态作用域</li>
 <li>怎么理解js的作用域和作用域链？</li>
 <li>什么是js的执行上下文？</li>
-<li>this的原理和不同场景下的取值</li>
+<li>this在不同场景下的取值</li>
+</ul>
+<blockquote>
+<p>（1）普通对象中：指向window<br>（2）call、bind、apply：指向传入的对象<br>（3）对象方法中：指向对象本身<br>（4）class方法中：指向实例<br>（5）箭头函数中：指向定义时所在的对象。</p>
+</blockquote>
+<ul>
 <li>call、apply、bind</li>
 <li>闭包是什么？开发中的应用场景？</li>
+</ul>
+<blockquote>
+<p><span class="pink">闭包就是能够读取其他函数内部变量的的函数。</span><br>闭包的两个特点：<br>（1）可以读取函数内部的变量。<br>（2）让这些变量的值始终保持在内存中。<br>开发中的应用场景：<br>（1）柯里化<br>（2）单例模式</p>
+</blockquote>
+<ul>
 <li>堆栈溢出和内存泄漏的原理？如何防止？</li>
 </ul>
 <h5 id="执行机制"><a href="#执行机制" class="headerlink" title="执行机制"></a>执行机制</h5><ul>
 <li>同步和异步的区别？</li>
+</ul>
+<blockquote>
+<p>同步会阻塞代码执行，异步不会。</p>
+</blockquote>
+<ul>
 <li>前端使用异步的场景有哪些？</li>
+</ul>
+<blockquote>
+<p>（1）网络请求<br>（2）定时任务<br>（3）事件绑定<br>（4）回调函数<br>（5）Promise</p>
+</blockquote>
+<ul>
 <li>详细描述Event Loop机制</li>
+</ul>
+<blockquote>
+<p>（1）同步和异步任务分别进入不同的执行”场所”，同步的进入主线程，异步的进入Event Table并注册函数。<br>（2）主线程之外，还存在一个”任务队列”。当指定的事情完成时，Event Table会将这个函数移入Event Queue。<br>（3）主线程内的任务执行完毕为空，会去Event Queue读取对应的函数，进入主线程执行。<br>（4）上述过程会不断重复，也就是常说的Event Loop(事件循环)。</p>
+</blockquote>
+<ul>
 <li>js如何实现异步编程？</li>
+</ul>
+<blockquote>
+<p>callback<br>promise<br>generator函数<br>async、await</p>
+</blockquote>
+<ul>
 <li>node与浏览器 Event Loop 的差异？</li>
 <li>如何在保证页面运行流畅的情况下处理海量数据？</li>
 </ul>
@@ -324,6 +423,11 @@
 <h4 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h4><h5 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h5><p><strong>HTTP</strong></p>
 <ul>
 <li>从输入一个url到整个页面渲染的过程？</li>
+</ul>
+<blockquote>
+<p><span class="pink">输入url开启新的网络请求线程<br>开启网络线程到发出一个完整的HTTP请求（DNS查询、TCP连接、五层协议栈）<br>服务器接收到请求到对应后台接受到请求（负载均衡、安全拦截）<br>前后台http交互（报文结构、常用头部、cookie、跨域、web安全、http缓存、 https）<br>浏览器接收到http数据包后的解析流程（生成DOM树、解析CSS生成CSS规则树、合并成render树、layout、painting渲染、复合图层的合并、外链处理、加载顺序）<br>JS引擎解析过程（JS的解释、预处理、执行上下文、作用域链、 this、回收机制）</span></p>
+</blockquote>
+<ul>
 <li>怎么理解多进程的浏览器和多线程的浏览器内核？</li>
 <li>DNS的作用？DNS解析的详细过程？DNS优化？</li>
 <li>说一下三次握手和四次挥手的详细过程？为什么要使用这种机制？</li>
@@ -348,6 +452,9 @@
 <ul>
 <li>cookie、localstorage、sessionstorage的区别？</li>
 </ul>
+<blockquote>
+<p><span class="pink">（1）生命周期</span><br>cookie：可设置失效时间，没有设置的话，默认是关闭浏览器后失效<br>localStorage：除非被手动清除，否则将会永久保存。<br>sessionStorage： 仅在当前网页会话下有效，关闭页面或浏览器后就会被清除。<br><span class="pink">（2）存储容量</span><br>cookie：4KB左右<br>localStorage和sessionStorage：可以保存5MB的信息。<br><span class="pink">（3）http请求</span><br>cookie：每次都会携带在HTTP头中，如果使用cookie保存过多数据会带来性能问题<br>localStorage和sessionStorage：仅在客户端（即浏览器）中保存，不参与和服务器的通信<br><span class="pink">（4）易用性</span><br>cookie：源生的Cookie接口不友好<br>localStorage和sessionStorage：源生接口可以接受，亦可再次封装来对Object和Array有更好的支持</p>
+</blockquote>
 <h5 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h5><h3 id="框架和类库"><a href="#框架和类库" class="headerlink" title="框架和类库"></a>框架和类库</h3><h4 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h4><h4 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h4><ul>
 <li><strong>说说你对Vue源码有哪些研究？</strong></li>
 </ul>
@@ -358,7 +465,13 @@
 <li><strong>Vue实现双向绑定的原理？</strong></li>
 </ul>
 <blockquote>
-<p><span class="pink">采用数据劫持结合发布-订阅者模式的方式，通过ES5的Object.defineProperty()方法来给各个属性添加getter和setter，在数据变动时发布消息给订阅者，触发相应的监听回调。主要由4个部分实现，一个是Observer监听器，用来劫持和监听属性。第二个是Compile指令解析器，它有两个作用，一个是初始化渲染页面，将模板中的变量都替换成数据。第二个作用是绑定更新函数以便在数据变动时相应的订阅者执行更新。第三个部分是Watcher订阅者，它是连接Observer和Compile的桥梁，主要的任务是用来派发更新。第四个部分是Dep订阅器 ，它是依赖收集的核心，用来管理Watcher订阅者，当触发setter时，通知相应的订阅者做相应的逻辑处理。</span></p>
+<p><span class="pink">采用数据劫持结合发布-订阅者模式的方式，通过ES5的Object.defineProperty()方法来给各个属性添加getter和setter，在数据变动时发布消息给订阅者，触发相应的监听回调。</span> 主要由4个部分实现:</p>
+<ol>
+<li>Observer监听器，用来劫持和监听属性。</li>
+<li>Compile指令解析器，它有两个作用，一是初始化渲染页面，将模板中的变量都替换成数据。第二个作用是绑定更新函数。</li>
+<li>Watcher订阅者，它是连接Observer和Compile的桥梁，主要的任务是用来派发更新。</li>
+<li>Dep订阅器 ，它是依赖收集的核心，用来管理Watcher订阅者，当触发setter时，通知相应的订阅者做相应的逻辑处理。</li>
+</ol>
 </blockquote>
 <ul>
 <li><strong>Vue组件间的通信有哪些方式？</strong></li>
@@ -395,75 +508,300 @@
 </ul>
 <blockquote>
 <span class="pink">
-computed：是计算属性，依赖其它属性值，并且 computed 的值有缓存，在依赖的数据发生变化时会重新计算。不能执行异步任务。
-wacth：更多的是「观察」的作用。观察的是属性值，只要属性值发生变化，就会触发执行回调函数进行一系列操作。
+computed：计算属性，依赖其它属性值，有缓存，在依赖的数据发生变化时才会重新计算。不能执行异步任务。</br>
+wacth：更多的是「观察」的作用。观察的是属性值，只要属性值发生变化，就会触发执行回调函数进行一系列操作。</br>
 总结：computed能实现的，watch都能实现。能用computed的尽量用computed！</span>
 </blockquote>
 <ul>
-<li><strong>虚拟 DOM 实现原理及优缺点？</strong></li>
+<li><strong>v-model 的原理？</strong></li>
 </ul>
 <blockquote>
-<p><span class="pink">虚拟 DOM 的实现原理主要包括以下 3 部分：</span></p>
+<p><span class="pink"> v-model 本质上不过是语法糖，v-model 在内部为不同的输入元素使用不同的属性并抛出不同的事件。</span></p>
+<ul>
+<li>text 和 textarea 元素使用 value 属性和 input 事件；</li>
+<li>checkbox 和 radio 使用 checked 属性和 change 事件；</li>
+<li>select 字段将 value 作为 prop 并将 change 作为事件。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>以input表单为例：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;input v-model=<span class="string">'something'</span>&gt;</span><br><span class="line"><span class="comment">// 相当于</span></span><br><span class="line">&lt;input v-bind:value=<span class="string">"something"</span> v-on:input=<span class="string">"something = $event.target.value"</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>Vue 中的 key 有什么作用？</strong></li>
+</ul>
+<blockquote>
+<p><span class="pink">key 是 vnode 的唯一标记，通过设置key，我们的 diff 操作可以更准确、更快速。</span></p>
+</blockquote>
+<ul>
+<li><strong>谈谈你对 keep-alive 的了解？</strong></li>
+</ul>
+<blockquote>
+<p><span class="pink">keep-alive 是 Vue 内置的一个组件，可以使被包含的组件保留状态，避免重新渲染 ，其有以下特性：</span></p>
 <ol>
-<li>用 JavaScript 对象模拟真实 DOM 树，对真实 DOM 进行抽象；</li>
-<li>diff 算法 — 比较两棵虚拟 DOM 树的差异；</li>
-<li>pach 算法 — 将两个虚拟 DOM 对象的差异应用到真正的 DOM 树。</li>
+<li>一般结合路由和动态组件一起使用，用于缓存组件；</li>
+<li>提供 include 和 exclude 属性，两者都支持字符串或正则表达式， include 表示只有名称匹配的组件会被缓存，exclude 表示任何名称匹配的组件都不会被缓存 ，其中 exclude 的优先级比 include 高；</li>
+<li>对应两个钩子函数 activated 和 deactivated ，当组件被激活时，触发钩子函数 activated，当组件被移除时，触发钩子函数 deactivated。</li>
 </ol>
 </blockquote>
+<ul>
+<li><strong>怎样理解 Vue 的单向数据流？</strong></li>
+</ul>
+<blockquote>
+<p><span class="pink">父级 prop 的更新会向下流动到子组件中，但是反过来则不行。</span>这样会防止从子组件意外改变父级组件的状态。并且父级组件发生更新时，子组件中所有的 prop 都将会刷新为最新的值。这意味着你不应该在一个子组件内部改变 prop。如果你这样做了，Vue 会在浏览器的控制台中发出警告。子组件想修改时，只能通过 $emit 派发一个自定义事件，父组件接收到后，由父组件修改。</p>
+</blockquote>
+<blockquote>
+<p>有两种常见的试图改变一个 prop 的情形 :</p>
+<ul>
+<li>prop 用来传递一个初始值，子组件接下来希望将其作为一个本地的 prop 数据来使用。 在这种情况下，最好定义一个本地的 data 属性并将这个 prop 用作其初始值。</li>
+<li>prop 以一种原始的值传入且需要进行转换。 在这种情况下，最好使用这个 prop 的值来定义一个计算属性。</li>
+</ul>
+</blockquote>
+<ul>
+<li><strong>使用过 Vue SSR 吗？说说 SSR？</strong></li>
+</ul>
+<blockquote>
+<p><span class="pink">SSR就是将组件渲染为服务器端的 HTML 字符串，并将它们直接发送到浏览器。</span><br>与传统 SPA 相比，SSR 的优势主要在于：<br>（1）更好的 SEO，由于搜索引擎爬虫抓取工具可以直接查看完全渲染的页面。<br>（2）更快的内容到达时间 (time-to-content)，特别是对于缓慢的网络情况或运行缓慢的设备。无需等待所有的 JavaScript 都完成下载并执行，才显示服务器渲染的标记，所以你的用户将会更快速地看到完整渲染的页面。通常可以产生更好的用户体验.<br>使用SSR也有一些需要权衡的地方：<br>（1）更多的开发条件限制。例如服务端渲染只支持 beforCreate 和 created 两个钩子函数，这会导致一些外部扩展库需要特殊处理，才能在服务端渲染应用程序中运行；<br>（2）更多的构建设置和部署。服务端渲染应用程序，需要处于 Node.js server 运行环境；<br>（3）更多的服务器端负载。在 Node.js 中渲染完整的应用程序，显然会比仅仅提供静态文件的 server 更加大量占用 CPU 资源 。</p>
+</blockquote>
+<ul>
+<li><strong>说说你对MVVM的理解</strong></li>
+</ul>
+<blockquote>
+<p>Model 层代表数据模型，用纯JavaScript对象表示。<br>View 层负责显示。<br>ViewModel 是 MVVM 的核心，它就像是一个中转站，向上与视图层进行双向数据绑定，向下与 Model 层进行数据交互。<br>MVVM 框架实现了双向绑定，开发者只需要处理和维护 ViewModel，更新数据视图就会自动得到相应更新。由 ViewModel 负责与 Model 层交互，这就完全解耦了 View 层和 Model 层。</p>
+</blockquote>
+<ul>
+<li><strong>说说 Vue 与 Angular 以及 React 区别</strong></li>
+</ul>
+<blockquote>
+<p>（1）Typescript，ES6 与 ES5<br>React 专注于使用 Javascript ES6。Vue 使用 Javascript ES5 或 ES6。Angular 依赖于 TypeScript。<br>（2）模板 —— JSX 还是 HTML<br>JSX 意味着 React 中的所有内容都是 Javascript – 用于JSX模板和逻辑。</p>
+</blockquote>
+<ul>
+<li><strong>说说你对 SPA 单页面的理解，它的优缺点分别是什么？</strong></li>
+</ul>
+<blockquote>
+<p>SPA仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行页面的重新加载或跳转；取而代之的是利用路由机制实现 HTML 内容的变换，UI 与用户的交互，避免页面的重新加载。<br>优点：<br>（1）用户体验好、快，内容的改变不需要重新加载整个页面，避免了不必要的跳转和重复渲染。<br>（2）基于上面一点，SPA 相对对服务器压力小。<br>（3）前后端职责分离，架构清晰，前端进行交互逻辑，后端负责数据处理。<br>缺点：<br>（1）首屏加载慢：初次加载通常会加载所有组件、向服务端请求数据、加载大量静态资源，因此这个时间相对会比较长。<br>（2）页面导航不可用：由于是单页面，因此不能使用浏览器的前进、后退功能，需要自己建立堆栈管理。<br>（3）不利于SEO优化：单页面应用很多内容都是动态加载的，数据也是在前端渲染的，这对搜索引擎不是很友好。</p>
+</blockquote>
+<ul>
+<li><strong>你有对 Vue 项目进行哪些优化？</strong></li>
+</ul>
+<blockquote>
+<p>（1）代码层面的优化</p>
+<ul>
+<li>v-for 遍历必须为 item 添加 key，且避免同时使用 v-if</li>
+<li><strong>图片资源懒加载</strong></li>
+<li><strong>路由懒加载</strong></li>
+<li><strong>第三方插件的按需引入</strong></li>
+<li>服务端渲染 SSR or 预渲染</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>（2）Webpack 层面的优化</p>
+<ul>
+<li>Webpack 对图片进行压缩</li>
+<li>减少 ES6 转为 ES5 的冗余代码</li>
+<li>提取公共代码</li>
+<li>模板预编译</li>
+<li>提取组件的 CSS</li>
+<li><strong>优化 SourceMap</strong></li>
+<li>构建结果输出分析</li>
+<li>Vue 项目的编译优化</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>（3）基础的 Web 技术的优化</p>
+<ul>
+<li><strong>开启 gzip 压缩</strong></li>
+<li>浏览器缓存</li>
+<li><strong>CDN 的使用</strong></li>
+<li>使用 Chrome Performance 查找性能瓶颈</li>
+</ul>
+</blockquote>
+<ul>
+<li><strong>Proxy 与 Object.defineProperty 优劣对比</strong></li>
+</ul>
+<blockquote>
+<p>Proxy 的优势如下:</p>
+<ul>
+<li>可以直接监听对象而非属性；</li>
+<li>可以直接监听数组的变化；</li>
+<li>有多达 13 种拦截方法,不限于 apply、ownKeys、deleteProperty、has 等等是 Object.defineProperty 不具备的；</li>
+<li>返回的是一个新对象,我们可以只操作新的对象达到目的,而 Object.defineProperty 只能遍历对象属性直接修改；</li>
+<li>作为新标准将受到浏览器厂商重点持续的性能优化，也就是传说中的新标准的性能红利；</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Object.defineProperty 的优势如下:</p>
+<ul>
+<li>兼容性好，支持 IE9，而 Proxy 的存在浏览器兼容性问题,而且无法用 polyfill 磨平。</li>
+</ul>
+</blockquote>
+<ul>
+<li><strong>对于 vue3.0 有什么了解的吗？</strong></li>
+</ul>
+<blockquote>
+<p>6大亮点：<br>Performance：性能更比Vue 2.0强。<br>Tree shaking support：可以将无用模块“剪辑”，仅打包需要的。<br>Composition API：组合API<br>Fragment, Teleport, Suspense：“碎片”，Teleport即Protal传送门，“悬念”<br>Better TypeScript support：更优秀的Ts支持<br>Custom Renderer API：暴露了自定义渲染API</p>
+</blockquote>
+<p><strong>虚拟 DOM</strong></p>
+<ul>
+<li>虚拟 DOM 的实现原理？（数据结构、create、diff、patch）</li>
+</ul>
+<blockquote>
+<p><span class="pink">(1)数据结构的定义 </span><br>VNode的本质是JS对象，它是对真实DOM的一种抽象描述。它的核心定义有几个关键属性：</p>
+<ul>
+<li>tag ：vnode的标签属性</li>
+<li>data ：最后渲染成真实dom节点后，节点上的class，attribute，style等</li>
+<li>children ：子节点</li>
+<li>key ：vnode的标记，在diff过程中可以提高diff的效率</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><span class="pink">(2) create </span><br>createElement创建VNode。createComponent创建组件VNode。<br><span class="pink">(3) diff —— 比较两棵虚拟 DOM 树的差异</span><br>组件更新过程的核心就是新旧 vnode diff，对新旧节点相同以及不同的情况分别做不同的处理。判断新旧节点是否相同是通过sameVNode(oldVnode, vnode)方法实现的。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sameVnode</span> (<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    a.key === b.key &amp;&amp; (</span><br><span class="line">      (</span><br><span class="line">        a.tag === b.tag &amp;&amp;</span><br><span class="line">        a.isComment === b.isComment &amp;&amp;</span><br><span class="line">        isDef(a.data) === isDef(b.data) &amp;&amp;</span><br><span class="line">        sameInputType(a, b)</span><br><span class="line">      ) || (</span><br><span class="line">        isTrue(a.isAsyncPlaceholder) &amp;&amp;</span><br><span class="line">        a.asyncFactory === b.asyncFactory &amp;&amp;</span><br><span class="line">        isUndef(b.asyncFactory.error)</span><br><span class="line">      )</span><br><span class="line">    )</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>sameVnode 的逻辑非常简单，如果两个 vnode 的 key 不相等，则是不同的；否则继续判断对于同步组件，则判断 isComment、data、input 类型等是否相同，对于异步组件，则判断 asyncFactory 是否相同。所以根据新旧 vnode 是否为 sameVnode，会走到不同的更新逻辑。</p>
+<blockquote>
+<p>新旧节点不同：创建新节点 -&gt; 更新占位符节点 -&gt; 删除旧节点<br>新旧节点相同：获取它们的 children，根据不同情况做不同的更新逻辑：<br>（1）oldCh 与 ch 都存在且不相同时，使用 updateChildren 函数来更新子节点。<br>（2）如果只有 ch 存在，表示旧节点不需要了。如果旧的节点是文本节点则先将节点的文本清除，然后通过 addVnodes 将 ch 批量插入到新节点 elm 下。<br>（3）如果只有 oldCh 存在，表示更新的是空节点，则需要将旧的节点通过 removeVnodes 全部清除。<br>（4）当只有旧节点是文本节点的时候，则清除其节点文本内容。</p>
+</blockquote>
+<blockquote>
+<p><span class="pink">(4) patch 将两个虚拟 DOM 对象的差异应用到真正的 DOM 树</span></p>
+</blockquote>
+<ul>
+<li>虚拟 DOM的优缺点？</li>
+</ul>
 <blockquote>
 <p><span class="pink">优点：</span></p>
 <ol>
-<li>保证性能下限： 框架的虚拟 DOM 需要适配任何上层 API 可能产生的操作，它的一些 DOM 操作的实现必须是普适的，所以它的性能并不是最优的；但是比起粗暴的 DOM 操作性能要好很多，因此框架的虚拟 DOM 至少可以保证在你不需要手动优化的情况下，依然可以提供还不错的性能，即保证性能的下限；</li>
-<li>无需手动操作 DOM： 我们不再需要手动去操作 DOM，只需要写好 View-Model 的代码逻辑，框架会根据虚拟 DOM 和 数据双向绑定，帮我们以可预期的方式更新视图，极大提高我们的开发效率；</li>
-<li>跨平台： 虚拟 DOM 本质上是 JavaScript 对象,而 DOM 与平台强相关，相比之下虚拟 DOM 可以进行更方便地跨平台操作，例如服务器渲染、weex 开发等等。</li>
+<li>保证性能下限： 虽然它的性能并不是最优的，但是比起粗暴的 DOM 操作性能要好很多，所以至少可以保证在你不需要手动优化的情况下，依然可以提供还不错的性能。</li>
+<li>无需手动操作 DOM： 我们只需要写好代码逻辑，框架会帮我们以可预期的方式更新视图，极大提高我们的开发效率；</li>
+<li>跨平台： 虚拟 DOM 本质上是 JavaScript 对象,而 DOM 与平台强相关，相比之下虚拟 DOM 可以进行更方便地跨平台操作，例如服务器渲染等等。</li>
 </ol>
 </blockquote>
 <blockquote>
 <p><span class="pink">缺点:</span></p>
 <ol>
-<li>无法进行极致优化： 虽然虚拟 DOM + 合理的优化，足以应对绝大部分应用的性能需求，但在一些性能要求极高的应用中虚拟 DOM 无法进行针对性的极致优化。</li>
+<li>无法进行极致优化： 虽然虚拟 DOM 足以应对绝大部分应用的性能需求，但在一些性能要求极高的应用中虚拟 DOM 无法进行针对性的极致优化。</li>
 </ol>
 </blockquote>
-<ul>
-<li><strong>v-model 的原理？</strong></li>
-<li><strong>Vue 中的 key 有什么作用？</strong></li>
-<li><strong>谈谈你对 keep-alive 的了解？</strong></li>
-<li><strong>怎样理解 Vue 的单向数据流？</strong></li>
-<li><strong>使用过 Vue SSR 吗？说说 SSR？</strong></li>
-<li><strong>说说你对MVVM的理解</strong></li>
-<li><strong>说说 Vue 与 Angular 以及 React 区别</strong></li>
-<li><strong>说说你对 SPA 单页面的理解，它的优缺点分别是什么？</strong></li>
-<li><strong>你有对 Vue 项目进行哪些优化？</strong></li>
-<li><strong>对于 vue3.0 有什么了解的吗？</strong></li>
-</ul>
 <p><strong>Vue生命周期</strong></p>
 <ul>
 <li>Vue生命周期是什么？</li>
+</ul>
+<blockquote>
+<p>Vue实例从开始创建、初始化数据、编译模版、挂载 Dom -&gt; 渲染、更新 -&gt; 渲染、卸载的一系列过程</p>
+</blockquote>
+<ul>
 <li>说一下每个生命周期的作用？</li>
+</ul>
+<blockquote>
+<p><span class="pink">beforeCreate（创建前）</span>：initState之前调用，所以data，computed，watch，methods 均不能访问。<br><span class="pink">created（创建后）</span>：initState之后调用，初始化事件已完成，可访问 data computed watch methods。初始化完成时的事件写在这里，异步请求也适宜在这里调用。<br><span class="pink">beforeMount（挂载前）</span>：在挂载开始前被调用，此时vm._render函数还没执行。<br><span class="pink">mounted（挂载后）</span>：在挂载后被调用，此时已完成DOM的渲染和挂载，一般在这个函数中完成依赖DOM的操作，比如监听DOM事件。<br><span class="pink">beforeUpdate（更新前）</span>：在数据更新之前调用，发生在虚拟DOM重新渲染和patch之前。可以在该钩子中进一步地更改状态，不会触发附加的重渲染过程。<br><span class="pink">updated（更新后）</span>：在由于数据更改导致的虚拟DOM重新渲染和patch之后调用。调用时，组件DOM已经更新，所以可以执行依赖于DOM的操作。然而在大多数情况下，应该避免在此期间更改状态，因为这可能会导致更新无限循环。<br><span class="pink">beforeDestroy（销毁前）</span>：在实例销毁之前调用。实例仍然完全可用。<br><span class="pink">destroyed（销毁后）</span>：在实例销毁之后调用。调用后，所有的事件监听器会被移除，所有的子实例也会被销毁。<br><span class="pink">activated（激活）</span>：在使用vue-router时有时需要使用<keep-alive></keep-alive>来缓存组件状态，这个时候created钩子就不会被重复调用了。如果我们的子组件需要在每次加载的时候进行某些操作，可以使用activated钩子触发。<br><span class="pink">deactivated（未激活）</span>：keep-alive组件停用时调用。</p>
+</blockquote>
+<ul>
 <li>第一次页面加载会触发哪几个钩子？</li>
+</ul>
+<blockquote>
+<p>beforeCreate、created、beforeMount、mounted</p>
+</blockquote>
+<ul>
 <li>Vue 的父组件和子组件生命周期钩子函数执行顺序？</li>
+</ul>
+<blockquote>
+<p>Vue 的父组件和子组件生命周期钩子函数执行顺序可以归类为以下 4 部分：<br>（1）加载渲染过程<br>父 beforeCreate -&gt; 父 created -&gt; 父 beforeMount -&gt; 子 beforeCreate -&gt; 子 created -&gt; 子 beforeMount -&gt; 子 mounted -&gt; 父 mounted<br>（2）子组件更新过程<br>父 beforeUpdate -&gt; 子 beforeUpdate -&gt; 子 updated -&gt; 父 updated<br>（3）父组件更新过程<br>父 beforeUpdate -&gt; 父 updated<br>（4）销毁过程<br>父 beforeDestroy -&gt; 子 beforeDestroy -&gt; 子 destroyed -&gt; 父 destroyed</p>
+</blockquote>
+<ul>
 <li>在哪个生命周期内调用异步请求？</li>
-<li>在什么阶段才能访问操作DOM？</li>
+</ul>
+<blockquote>
+<p>可以在钩子函数 created、beforeMount、mounted 中进行调用，因为在这三个钩子函数中，data 已经创建，可以将服务端端返回的数据进行赋值。但是推荐在 created 钩子函数中调用异步请求，因为在 created 钩子函数中调用异步请求有以下优点：<br>（1）能更快获取到服务端数据，减少页面 loading 时间；<br>（2）ssr 不支持 beforeMount 、mounted 钩子函数，所以放在 created 中有助于一致性；</p>
+</blockquote>
+<ul>
 <li>父组件可以监听到子组件的生命周期吗？</li>
 </ul>
+<blockquote>
+<p>在父组件引用子组件时通过 @hook 来监听即可。@hook 方法不仅仅是可以监听 mounted，其它的生命周期事件，例如：created，updated 等都可以监听。</p>
+</blockquote>
 <p><strong>Vue-Router</strong></p>
 <ul>
 <li>Vue-router 有几种路由模式？它们的实现原理是什么？</li>
-<li>Vue-router的钩子函数（导航守卫）有哪些？</li>
-<li>$route和$router的区别？</li>
-<li>怎么定义嵌套路由？</li>
-<li>怎么实现动态路由匹配？</li>
-<li>怎么实现路由懒加载？</li>
-<li>params和query都可以用来传参，区别是什么？</li>
-<li>active-class是哪个组件的属性？</li>
-<li>Vue-router如何响应路由参数的变化？</li>
-<li>完整的 vue-router 导航解析流程？</li>
 </ul>
+<blockquote>
+<p>（1）hash模式（默认）：浏览器中，#后面的字符称之为hash，用window.location.hash获取。虽然在URL中，但不被包含在HTTP请求中。当URL改变的时候，不会重新加载页面。因此，对后端来说，即使没有做到对路由的全覆盖，也不会返回404错误。<br>（2）history模式：history模式采用HTML5的新特性，提供了两个方法pushState()、replaceState()可以对浏览器历史记录栈进行修改，以及popState事件可以监听到状态变更。history模式下，前端的URL必须和实际向后端发起请求的URL一致。后端如果缺少对路由的处理，将返回404错误。所以需要在服务端增加一个覆盖所有情况的候选资源。</p>
+</blockquote>
+<ul>
+<li>Vue-router的钩子函数（导航守卫）有哪些？</li>
+</ul>
+<blockquote>
+<p>全局守卫：</p>
+<ul>
+<li>beforeEach(to, from, next)</li>
+<li>beforeResolve</li>
+<li>afterEach</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>路由独享守卫：</p>
+<ul>
+<li>beforeEnter</li>
+<li>beforeLeave</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>组件内守卫：</p>
+<ul>
+<li>beforeRouteEnter：不能获取组件实例‘this’，因为在守卫执行前，组件实例还没被创建。</li>
+<li>beforeRouteUpdate：在当前路由改变，但是该组件被复用时调用。</li>
+<li>beforeRouteLeave</li>
+</ul>
+</blockquote>
+<ul>
+<li>$route和$router的区别？</li>
+</ul>
+<blockquote>
+<p>$route：路由对象，一个路由对象包含了当前激活的路由的状态信息。比如path、params、query等。<br>$router：Vue-router的实例对象，包含了路由的跳转方法，钩子函数等。</p>
+</blockquote>
+<ul>
+<li>怎么定义嵌套路由？</li>
+</ul>
+<blockquote>
+<p>在VueRouter的参数中使用children配置。</p>
+</blockquote>
+<ul>
+<li>怎么实现动态路由匹配？</li>
+</ul>
+<blockquote>
+<p>在路由路径中使用 动态路径参数（以冒号开头）实现动态路由匹配。</p>
+</blockquote>
+<ul>
+<li>怎么实现路由懒加载？</li>
+</ul>
+<blockquote>
+<p>使用ES6提供的import语法。还可以指定webpackChunkName，将组件按组分块。</p>
+</blockquote>
+<ul>
+<li>params和query都可以用来传参，区别是什么？</li>
+</ul>
+<blockquote>
+<p>params：用params传参必须提供路由的name，如果提供的是path，params会被忽略。<br>query：用query传参可使用path，参数会拼接在url中。</p>
+</blockquote>
+<ul>
+<li>active-class是哪个组件的属性？</li>
+</ul>
+<blockquote>
+<p><router-link>组件，用来设置链接激活时使用的CSS类名。</p>
+</blockquote>
 <p><strong>Vuex</strong></p>
 <ul>
-<li>Vuex是什么？怎么使用？应用场景有哪些？</li>
+<li>Vuex是什么？</li>
+</ul>
+<blockquote>
+<p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。<br><span class="pink">（1）Vuex 的状态存储是响应式的。</span>当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。<br><span class="pink">（2）改变 store 中的状态的唯一途径就是显式地提交mutation。</span>这样使得我们可以方便地跟踪每一个状态的变化。<br>主要包括以下几个模块：<br><span class="pink">State</span>：定义了应用状态的数据结构，可以在这里设置默认的初始状态。<br><span class="pink">Getter</span>：允许组件从 Store 中获取数据，mapGetters 辅助函数仅仅是将 store 中的 getter 映射到局部计算属性。<br><span class="pink">Mutation</span>：是唯一更改 store 中状态的方法，且必须是同步函数。<br><span class="pink">Action</span>：用于提交 mutation，而不是直接变更状态，可以包含任意异步操作。<br><span class="pink">Module</span>：允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中。</p>
+</blockquote>
+<ul>
 <li>Vuex和单纯的全局对象的区别？</li>
 </ul>
+<blockquote>
+<p>vuex的状态存储是响应式的。<br>vuex不能直接改变store中的状态，改变store中状态的唯一途径就是显式地提交mutation。</p>
+</blockquote>
 <h4 id="React"><a href="#React" class="headerlink" title="React"></a>React</h4><h4 id="Electron"><a href="#Electron" class="headerlink" title="Electron"></a>Electron</h4><h3 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h3><h4 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h4><h4 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h4><h4 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h4><h3 id="数据结构和算法"><a href="#数据结构和算法" class="headerlink" title="数据结构和算法"></a>数据结构和算法</h3><ul>
 <li>说一说都有哪些数据结构？</li>
 <li>各种排序算法的实现原理？应用场景？</li>
