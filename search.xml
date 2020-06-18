@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>前端学习书签</title>
-    <url>/2020/06/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E4%B9%A6%E7%AD%BE/</url>
-    <content><![CDATA[<h4 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h4><h4 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h4><h4 id="React"><a href="#React" class="headerlink" title="React"></a>React</h4><h4 id="微信小程序"><a href="#微信小程序" class="headerlink" title="微信小程序"></a>微信小程序</h4><h4 id="Electron"><a href="#Electron" class="headerlink" title="Electron"></a>Electron</h4><h4 id="React-1"><a href="#React-1" class="headerlink" title="React"></a>React</h4><h4 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h4><h4 id="Flutter"><a href="#Flutter" class="headerlink" title="Flutter"></a>Flutter</h4><h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4>]]></content>
-      <tags>
-        <tag>学习计划</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Nginx的安装和配置</title>
     <url>/2020/05/24/nginx%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[]]></content>
@@ -29,6 +21,14 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端学习书签</title>
+    <url>/2020/06/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E4%B9%A6%E7%AD%BE/</url>
+    <content><![CDATA[<h4 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h4><h4 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h4><h4 id="React"><a href="#React" class="headerlink" title="React"></a>React</h4><h4 id="微信小程序"><a href="#微信小程序" class="headerlink" title="微信小程序"></a>微信小程序</h4><h4 id="Electron"><a href="#Electron" class="headerlink" title="Electron"></a>Electron</h4><h4 id="React-1"><a href="#React-1" class="headerlink" title="React"></a>React</h4><h4 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h4><h4 id="Flutter"><a href="#Flutter" class="headerlink" title="Flutter"></a>Flutter</h4><h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4>]]></content>
+      <tags>
+        <tag>学习计划</tag>
       </tags>
   </entry>
   <entry>
@@ -198,6 +198,9 @@
 <li>symbol</li>
 <li>class</li>
 <li>Promise</li>
+<li>let const</li>
+<li>set map</li>
+<li>proxy</li>
 </ul>
 <h4 id="JS进阶"><a href="#JS进阶" class="headerlink" title="JS进阶"></a>JS进阶</h4><h5 id="正则"><a href="#正则" class="headerlink" title="正则"></a>正则</h5><h5 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h5><ul>
 <li>手写简易ajax</li>
@@ -617,6 +620,17 @@ wacth：更多的是「观察」的作用。观察的是属性值，只要属性
       </tags>
   </entry>
   <entry>
+    <title>手写jQuery方法系列</title>
+    <url>/2020/06/14/%E6%89%8B%E5%86%99jQuery%E6%96%B9%E6%B3%95%E7%B3%BB%E5%88%97/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>jQuery</category>
+      </categories>
+      <tags>
+        <tag>jQuery</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深入理解JavaScript系列</title>
     <url>/2020/06/14/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JavaScript%E7%B3%BB%E5%88%97/</url>
     <content><![CDATA[<h4 id="1、数据类型与深拷贝、浅拷贝"><a href="#1、数据类型与深拷贝、浅拷贝" class="headerlink" title="1、数据类型与深拷贝、浅拷贝"></a>1、数据类型与深拷贝、浅拷贝</h4>]]></content>
@@ -750,17 +764,6 @@ wacth：更多的是「观察」的作用。观察的是属性值，只要属性
       </categories>
       <tags>
         <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手写jQuery方法系列</title>
-    <url>/2020/06/14/%E6%89%8B%E5%86%99jQuery%E6%96%B9%E6%B3%95%E7%B3%BB%E5%88%97/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>jQuery</category>
-      </categories>
-      <tags>
-        <tag>jQuery</tag>
       </tags>
   </entry>
 </search>
