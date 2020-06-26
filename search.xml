@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Nginx的安装和配置</title>
+    <url>/2020/05/24/nginx%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Nginx</category>
+      </categories>
+      <tags>
+        <tag>Nginx</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaScript面向对象编程</title>
     <url>/2020/06/11/JavaScript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</url>
     <content><![CDATA[<h3 id="一、理解对象"><a href="#一、理解对象" class="headerlink" title="一、理解对象"></a>一、理解对象</h3><h3 id="二、封装"><a href="#二、封装" class="headerlink" title="二、封装"></a>二、封装</h3><h4 id="2-1-工厂模式"><a href="#2-1-工厂模式" class="headerlink" title="2.1 工厂模式"></a>2.1 工厂模式</h4><h4 id="2-2-构造函数模式"><a href="#2-2-构造函数模式" class="headerlink" title="2.2 构造函数模式"></a>2.2 构造函数模式</h4><h4 id="2-3-原型模式"><a href="#2-3-原型模式" class="headerlink" title="2.3 原型模式"></a>2.3 原型模式</h4><h4 id="2-4-组合使用构造函数模式和原型模式"><a href="#2-4-组合使用构造函数模式和原型模式" class="headerlink" title="2.4 组合使用构造函数模式和原型模式"></a>2.4 组合使用构造函数模式和原型模式</h4><h4 id="2-5-动态原型模式"><a href="#2-5-动态原型模式" class="headerlink" title="2.5 动态原型模式"></a>2.5 动态原型模式</h4><h4 id="2-6-寄生构造函数模式"><a href="#2-6-寄生构造函数模式" class="headerlink" title="2.6 寄生构造函数模式"></a>2.6 寄生构造函数模式</h4><h4 id="2-7-稳妥构造函数模式"><a href="#2-7-稳妥构造函数模式" class="headerlink" title="2.7 稳妥构造函数模式"></a>2.7 稳妥构造函数模式</h4><h3 id="三、继承"><a href="#三、继承" class="headerlink" title="三、继承"></a>三、继承</h3><h4 id="3-1-概念"><a href="#3-1-概念" class="headerlink" title="3.1 概念"></a>3.1 概念</h4><h5 id="3-2-1-prototype"><a href="#3-2-1-prototype" class="headerlink" title="3.2.1 prototype"></a>3.2.1 prototype</h5><h5 id="3-2-2-proto"><a href="#3-2-2-proto" class="headerlink" title="3.2.2 __proto__"></a>3.2.2 __proto__</h5><h5 id="3-2-3-constructor"><a href="#3-2-3-constructor" class="headerlink" title="3.2.3 constructor"></a>3.2.3 constructor</h5><h5 id="3-2-4-原型链"><a href="#3-2-4-原型链" class="headerlink" title="3.2.4 原型链"></a>3.2.4 原型链</h5><p>所谓”构造函数”，其实就是一个普通函数，但是内部使用了<strong>this</strong>变量。对构造函数使用<strong>new</strong>运算符，就能生成实例，并且<strong>this</strong>变量会绑定在实例对象上。</p>
@@ -13,15 +24,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Nginx的安装和配置</title>
-    <url>/2020/05/24/nginx%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
+    <title>使用css绘制几何图形（三角形、圆形、菱形等）</title>
+    <url>/2020/06/22/%E4%BD%BF%E7%94%A8css%E7%BB%98%E5%88%B6%E5%87%A0%E4%BD%95%E5%9B%BE%E5%BD%A2%EF%BC%88%E4%B8%89%E8%A7%92%E5%BD%A2%E3%80%81%E5%9C%86%E5%BD%A2%E3%80%81%E8%8F%B1%E5%BD%A2%E7%AD%89%EF%BC%89/</url>
     <content><![CDATA[]]></content>
-      <categories>
-        <category>Nginx</category>
-      </categories>
-      <tags>
-        <tag>Nginx</tag>
-      </tags>
   </entry>
   <entry>
     <title>前端学习路径</title>
@@ -44,14 +49,118 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>手写jQuery方法系列</title>
-    <url>/2020/06/14/%E6%89%8B%E5%86%99jQuery%E6%96%B9%E6%B3%95%E7%B3%BB%E5%88%97/</url>
-    <content><![CDATA[]]></content>
+    <title>水平垂直居中的方案</title>
+    <url>/2020/06/22/%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>一个块级元素水平垂直居中的实现可以分为两大类，一类是元素固定宽高，另一类是元素不定宽高。</p>
+<a id="more"></a>
+<h3 id="固定宽高"><a href="#固定宽高" class="headerlink" title="固定宽高"></a>固定宽高</h3><p>为了模拟固定宽高元素实现居中效果，我们假设html部分的代码为：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>css部分公共的代码为：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#f00</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="absolute-margin-auto"><a href="#absolute-margin-auto" class="headerlink" title="absolute + margin: auto"></a>absolute + margin: auto</h4><p>实现代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">margin</span>: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>实现原理：利用 <span class="pink">margin: auto</span> 的填充机制，<span class="pink">margin: auto</span> 的填充规则如下：</p>
+<ol>
+<li>如果一侧定值，一侧auto，则auto为剩余空间；</li>
+<li>如果两侧均为auto，则平分剩余空间。</li>
+</ol>
+<p>但是触发 margin: auto 计算有一个前提条件：<span class="pink">当 width 或 height 为 auto 时，元素是具有对应方向的自动填充特性的。即当宽高不受限时，元素尺寸将自动填充父级元素的可用尺寸。</span></p>
+<h4 id="absolute-负margin"><a href="#absolute-负margin" class="headerlink" title="absolute + 负margin"></a>absolute + 负margin</h4><p>实现代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">margin-top</span>: -<span class="number">50px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>实现原理：绝对定位元素的top、left的百分比值是相对于其块级父元素的宽高，因此可以利用这一特性来实现子元素居中显示，但是绝对定位是基于元素的左上角，而我们想要的效果是基于元素的中心居中显示。为了修正这一问题，我们给 margin 设置一个负的偏移值，这个偏移值就是子元素宽高的一半，这样就可以实现基于子元素的中心居中了。</p>
+<p>我们还可以使用css3提供的<span class="pink"> calc() </span>函数来简化部分代码</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="built_in">calc</span>(<span class="number">50%</span> - <span class="number">50px</span>);</span><br><span class="line">  <span class="attribute">left</span>: <span class="built_in">calc</span>(<span class="number">50%</span> - <span class="number">50px</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="不定宽高"><a href="#不定宽高" class="headerlink" title="不定宽高"></a>不定宽高</h3><p>为了模拟不定宽高元素实现居中效果，我们假设html部分的代码为：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span>112233<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>css部分公共的代码为：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#f00</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="absolute-transform"><a href="#absolute-transform" class="headerlink" title="absolute + transform"></a>absolute + transform</h4><p>实现代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>实现原理：该方式还是利用的绝对定位，但是当子元素的宽高未知时，就不能使用负边距解决定位的偏移问题。此时可以利用transform的translate属性修复中心的偏移问题。因为 <strong>translate 的百分比是相对于元素自身的宽高</strong>，设置 translate(-50%, -50%) 就相当于给元素设置了水平和垂直方向的负偏移值，偏移值的大小就是元素宽高的一半。</p>
+<h4 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h4><p>实现代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="line-height"><a href="#line-height" class="headerlink" title="line-height"></a>line-height</h4><p>实现代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">300px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">line-height</span>: initial;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>实现原理：该方式是利用行内元素的居中属性。使用 text-align 实现水平居中，垂直居中则是利用 line-height + vertical-align 实现。我们知道要让单行文本垂直居中可以通过设置 line-height 属性实现，而<strong>行高可以实现垂直居中的原因在于CSS中行距的上下等分机制</strong>。其实 line-height 也可以让多行文本或者图片等替换元素垂直居中。只是需要 vertical-align 的帮助。具体实现原理可解释为：</p>
+<ol>
+<li>多行文本使用一个标签包裹，并将 display 设置为 inline-block。这样做的目的是在.wrap元素内产生一个“行框盒子”，而每一个“行框盒子”都会附带一个“空白幽灵节点”，有了这个节点，line-height: 300px 就有了作用对象，相当于在.main 元素前面撑起了一个高度为300px 宽度为0 的内联元素。</li>
+<li>因为内联元素默认是基线对齐，所以通过给.main元素设置 vertical-align: middle 来调整多行文本的垂直居中位置。vertical-align: middle 中的middle指的是基线往上二分之一 x-height 的位置，可以近似理解为 x 字符交叉点的位置。</li>
+</ol>
+<h4 id="table-cell"><a href="#table-cell" class="headerlink" title="table-cell"></a>table-cell</h4><p>实现代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: table-cell;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>实现原理：table可以实现水平垂直居中效果，曾经是页面布局的常用方法，但是会增加很多冗余代码。display 的 table-cell 属性可以将元素作为一个表格的单元格显示（类似于&lt;td&gt;），利用这一特性也可以实现元素居中效果，并且不会产生冗余代码。</p>
+<h4 id="grid"><a href="#grid" class="headerlink" title="grid"></a>grid</h4><p>实现代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">align-self</span>: center;</span><br><span class="line">  <span class="attribute">justify-self</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>实现原理：CSS 新出的 grid（网格）布局也可以实现水平垂直居中。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">是否固定宽高</th>
+<th align="center">PC兼容性</th>
+<th align="center">移动端兼容性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">absolute + margin auto</td>
+<td align="center">是</td>
+<td align="center">ie7+, chrome4+, firefox2+</td>
+<td align="center">安卓2.3+, iOS6+</td>
+</tr>
+<tr>
+<td align="center">absolute + 负margin</td>
+<td align="center">是</td>
+<td align="center">ie6+, chrome4+, firefox2+</td>
+<td align="center">安卓2.3+, iOS6+</td>
+</tr>
+<tr>
+<td align="center">absolute + calc</td>
+<td align="center">是</td>
+<td align="center">ie9+, chrome19+, firefox4+</td>
+<td align="center">安卓4.4+, iOS6+</td>
+</tr>
+<tr>
+<td align="center">absolute + transform</td>
+<td align="center">否</td>
+<td align="center">ie9+, chrome4+, firefox3.5+</td>
+<td align="center">安卓3+, iOS6+</td>
+</tr>
+<tr>
+<td align="center">line-height</td>
+<td align="center">否</td>
+<td align="center">ie6+, chrome4+, firefox2+</td>
+<td align="center">安卓2.3+, iOS6+</td>
+</tr>
+<tr>
+<td align="center">table-cell</td>
+<td align="center">否</td>
+<td align="center">ie8+, chrome4+, firefox2+</td>
+<td align="center">安卓2.3+, iOS6+</td>
+</tr>
+<tr>
+<td align="center">flex</td>
+<td align="center">否</td>
+<td align="center">ie10+, chrome4+, firefox2+</td>
+<td align="center">安卓2.3+, iOS6+</td>
+</tr>
+<tr>
+<td align="center">grid</td>
+<td align="center">否</td>
+<td align="center">ie10+, chrome57+, firefox52+</td>
+<td align="center">安卓6+, iOS10.3+</td>
+</tr>
+</tbody></table>
+<ol>
+<li><strong>移动端几乎可以完全使用 flex。</strong></li>
+<li><strong>pc端如果不需要考虑IE7，推荐利用绝对定位的流体特性和 margin: auto 的自动分配特性实现居中。</strong></li>
+</ol>
+]]></content>
       <categories>
-        <category>jQuery</category>
+        <category>CSS</category>
       </categories>
       <tags>
-        <tag>jQuery</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -177,6 +286,17 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手写jQuery方法系列</title>
+    <url>/2020/06/14/%E6%89%8B%E5%86%99jQuery%E6%96%B9%E6%B3%95%E7%B3%BB%E5%88%97/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>jQuery</category>
+      </categories>
+      <tags>
+        <tag>jQuery</tag>
       </tags>
   </entry>
   <entry>
@@ -765,60 +885,5 @@ wacth：更多的是「观察」的作用。观察的是属性值，只要属性
       <tags>
         <tag>面试</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>水平垂直居中的方案</title>
-    <url>/2020/06/22/%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<p>一个块级元素水平垂直居中的实现可以分为两大类，一类是元素固定宽高，另一类是元素不定宽高。</p>
-<a id="more"></a>
-<h3 id="固定宽高"><a href="#固定宽高" class="headerlink" title="固定宽高"></a>固定宽高</h3><p>为了模拟固定宽高元素实现居中效果，我们假设html部分的代码为：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>css部分公共的代码为：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#f00</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="absolute-margin-auto"><a href="#absolute-margin-auto" class="headerlink" title="absolute + margin: auto"></a>absolute + margin: auto</h4><p>实现代码：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">margin</span>: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>实现原理：利用 <span class="pink">margin: auto</span> 的填充机制，<span class="pink">margin: auto</span> 的填充规则如下：</p>
-<ol>
-<li>如果一侧定值，一侧auto，则auto为剩余空间；</li>
-<li>如果两侧均为auto，则平分剩余空间。</li>
-</ol>
-<p>但是触发 <span class="pink">margin: auto</span> 计算有一个前提条件：<span class="pink">当 width 或 height 为 auto 时，元素是具有对应方向的自动填充特性的。即当宽高不受限时，元素尺寸将自动填充父级元素的可用尺寸。</span></p>
-<h4 id="absolute-负margin"><a href="#absolute-负margin" class="headerlink" title="absolute + 负margin"></a>absolute + 负margin</h4><p>实现代码：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">margin-top</span>: -<span class="number">50px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>实现原理：</p>
-<h4 id="absolute-calc"><a href="#absolute-calc" class="headerlink" title="absolute + calc"></a>absolute + calc</h4><p>实现代码：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="built_in">calc</span>(<span class="number">50%</span> - <span class="number">50px</span>);</span><br><span class="line">  <span class="attribute">left</span>: <span class="built_in">calc</span>(<span class="number">50%</span> - <span class="number">50px</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>实现原理：</p>
-<h3 id="不定宽高"><a href="#不定宽高" class="headerlink" title="不定宽高"></a>不定宽高</h3><p>为了模拟不定宽高元素实现居中效果，我们假设html部分的代码为：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span>112233<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>css部分公共的代码为：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#f00</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="absolute-transform"><a href="#absolute-transform" class="headerlink" title="absolute + transform"></a>absolute + transform</h4><p>实现代码：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>实现原理：</p>
-<h4 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h4><p>实现代码：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>实现原理：</p>
-<h4 id="line-height"><a href="#line-height" class="headerlink" title="line-height"></a>line-height</h4><p>实现代码：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">300px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">line-height</span>: initial;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>实现原理：</p>
-<h4 id="table-cell"><a href="#table-cell" class="headerlink" title="table-cell"></a>table-cell</h4><p>实现代码：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: table-cell;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>实现原理：</p>
-<h4 id="grid"><a href="#grid" class="headerlink" title="grid"></a>grid</h4><p>实现代码：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">  <span class="attribute">align-self</span>: center;</span><br><span class="line">  <span class="attribute">justify-self</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>实现原理：</p>
-]]></content>
-      <categories>
-        <category>CSS</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用css绘制几何图形（三角形、圆形、菱形等）</title>
-    <url>/2020/06/22/%E4%BD%BF%E7%94%A8css%E7%BB%98%E5%88%B6%E5%87%A0%E4%BD%95%E5%9B%BE%E5%BD%A2%EF%BC%88%E4%B8%89%E8%A7%92%E5%BD%A2%E3%80%81%E5%9C%86%E5%BD%A2%E3%80%81%E8%8F%B1%E5%BD%A2%E7%AD%89%EF%BC%89/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
