@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #afa2ff;
+  background: #fef;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2250,14 +2250,9 @@ p {
   margin: 0 0 10px 0;
 }
 code {
-  color: #d500fc;
-  background: rgba(78,240,233,0.42);
-  margin: 2px;
-  border: 1px solid #d6d6d6;
-}
-.pink {
   color: #fa69a2;
   background: #fef4fa;
+  margin: 2px;
 }
 table {
   font-size: 0.9em;

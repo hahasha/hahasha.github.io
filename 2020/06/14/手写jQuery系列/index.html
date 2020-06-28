@@ -16,19 +16,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一、理解对象二、封装2.1 工厂模式2.2 构造函数模式2.3 原型模式2.4 组合使用构造函数模式和原型模式2.5 动态原型模式2.6 寄生构造函数模式2.7 稳妥构造函数模式三、继承3.1 概念3.2.1 prototype3.2.2 __proto__3.2.3 constructor3.2.4 原型链所谓”构造函数”，其实就是一个普通函数，但是内部使用了this变量。对构造函数使用new运">
+  <meta name="description" content="Just do it.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript面向对象编程">
-<meta property="og:url" content="http://yoursite.com/2020/06/11/JavaScript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/index.html">
+<meta property="og:title" content="手写jQuery系列">
+<meta property="og:url" content="http://yoursite.com/2020/06/14/%E6%89%8B%E5%86%99jQuery%E7%B3%BB%E5%88%97/index.html">
 <meta property="og:site_name" content="">
-<meta property="og:description" content="一、理解对象二、封装2.1 工厂模式2.2 构造函数模式2.3 原型模式2.4 组合使用构造函数模式和原型模式2.5 动态原型模式2.6 寄生构造函数模式2.7 稳妥构造函数模式三、继承3.1 概念3.2.1 prototype3.2.2 __proto__3.2.3 constructor3.2.4 原型链所谓”构造函数”，其实就是一个普通函数，但是内部使用了this变量。对构造函数使用new运">
-<meta property="article:published_time" content="2020-06-11T07:36:53.000Z">
-<meta property="article:modified_time" content="2020-06-14T13:29:50.351Z">
+<meta property="og:description" content="Just do it.">
+<meta property="article:published_time" content="2020-06-14T14:07:25.000Z">
+<meta property="article:modified_time" content="2020-06-26T16:21:54.347Z">
 <meta property="article:author" content="sasa">
-<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="jQuery">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/06/11/JavaScript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/">
+<link rel="canonical" href="http://yoursite.com/2020/06/14/%E6%89%8B%E5%86%99jQuery%E7%B3%BB%E5%88%97/">
 
 
 <script id="page-configurations">
@@ -41,7 +41,7 @@
   };
 </script>
 
-  <title>JavaScript面向对象编程 | </title>
+  <title>手写jQuery系列 | </title>
   
 
 
@@ -184,7 +184,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/11/JavaScript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/14/%E6%89%8B%E5%86%99jQuery%E7%B3%BB%E5%88%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -197,7 +197,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          JavaScript面向对象编程
+          手写jQuery系列
         </h1>
 
         <div class="post-meta">
@@ -207,14 +207,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-06-11 15:36:53" itemprop="dateCreated datePublished" datetime="2020-06-11T15:36:53+08:00">2020-06-11</time>
+              <time title="创建时间：2020-06-14 22:07:25" itemprop="dateCreated datePublished" datetime="2020-06-14T22:07:25+08:00">2020-06-14</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-14 21:29:50" itemprop="dateModified" datetime="2020-06-14T21:29:50+08:00">2020-06-14</time>
+                <time title="修改时间：2020-06-27 00:21:54" itemprop="dateModified" datetime="2020-06-27T00:21:54+08:00">2020-06-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -222,7 +222,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
+                  <a href="/categories/jQuery/" itemprop="url" rel="index"><span itemprop="name">jQuery</span></a>
                 </span>
             </span>
 
@@ -237,8 +237,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="一、理解对象"><a href="#一、理解对象" class="headerlink" title="一、理解对象"></a>一、理解对象</h3><h3 id="二、封装"><a href="#二、封装" class="headerlink" title="二、封装"></a>二、封装</h3><h4 id="2-1-工厂模式"><a href="#2-1-工厂模式" class="headerlink" title="2.1 工厂模式"></a>2.1 工厂模式</h4><h4 id="2-2-构造函数模式"><a href="#2-2-构造函数模式" class="headerlink" title="2.2 构造函数模式"></a>2.2 构造函数模式</h4><h4 id="2-3-原型模式"><a href="#2-3-原型模式" class="headerlink" title="2.3 原型模式"></a>2.3 原型模式</h4><h4 id="2-4-组合使用构造函数模式和原型模式"><a href="#2-4-组合使用构造函数模式和原型模式" class="headerlink" title="2.4 组合使用构造函数模式和原型模式"></a>2.4 组合使用构造函数模式和原型模式</h4><h4 id="2-5-动态原型模式"><a href="#2-5-动态原型模式" class="headerlink" title="2.5 动态原型模式"></a>2.5 动态原型模式</h4><h4 id="2-6-寄生构造函数模式"><a href="#2-6-寄生构造函数模式" class="headerlink" title="2.6 寄生构造函数模式"></a>2.6 寄生构造函数模式</h4><h4 id="2-7-稳妥构造函数模式"><a href="#2-7-稳妥构造函数模式" class="headerlink" title="2.7 稳妥构造函数模式"></a>2.7 稳妥构造函数模式</h4><h3 id="三、继承"><a href="#三、继承" class="headerlink" title="三、继承"></a>三、继承</h3><h4 id="3-1-概念"><a href="#3-1-概念" class="headerlink" title="3.1 概念"></a>3.1 概念</h4><h5 id="3-2-1-prototype"><a href="#3-2-1-prototype" class="headerlink" title="3.2.1 prototype"></a>3.2.1 prototype</h5><h5 id="3-2-2-proto"><a href="#3-2-2-proto" class="headerlink" title="3.2.2 __proto__"></a>3.2.2 __proto__</h5><h5 id="3-2-3-constructor"><a href="#3-2-3-constructor" class="headerlink" title="3.2.3 constructor"></a>3.2.3 constructor</h5><h5 id="3-2-4-原型链"><a href="#3-2-4-原型链" class="headerlink" title="3.2.4 原型链"></a>3.2.4 原型链</h5><p>所谓”构造函数”，其实就是一个普通函数，但是内部使用了<strong>this</strong>变量。对构造函数使用<strong>new</strong>运算符，就能生成实例，并且<strong>this</strong>变量会绑定在实例对象上。</p>
-<h4 id="3-2-组合继承"><a href="#3-2-组合继承" class="headerlink" title="3.2 组合继承"></a>3.2 组合继承</h4><h4 id="3-3-原型链继承"><a href="#3-3-原型链继承" class="headerlink" title="3.3 原型链继承"></a>3.3 原型链继承</h4><h4 id="3-4-寄生式继承"><a href="#3-4-寄生式继承" class="headerlink" title="3.4 寄生式继承"></a>3.4 寄生式继承</h4><h4 id="3-5-寄生组合式继承"><a href="#3-5-寄生组合式继承" class="headerlink" title="3.5 寄生组合式继承"></a>3.5 寄生组合式继承</h4>
+        
     </div>
 
     
@@ -247,7 +246,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+              <a href="/tags/jQuery/" rel="tag"># jQuery</a>
           </div>
 
         
@@ -256,12 +255,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/05/24/nginx%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/" rel="prev" title="Nginx的安装和配置">
-      <i class="fa fa-chevron-left"></i> Nginx的安装和配置
+    <a href="/2020/06/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/" rel="prev" title="前端学习路径">
+      <i class="fa fa-chevron-left"></i> 前端学习路径
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/06/12/%E6%89%8B%E5%86%99JS%E7%B3%BB%E5%88%97/" rel="next" title="手写JS系列">
-      手写JS系列 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/06/16/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E7%AF%87/" rel="next" title="前端面试篇">
+      前端面试篇 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -321,7 +320,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、理解对象"><span class="nav-text">一、理解对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、封装"><span class="nav-text">二、封装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-工厂模式"><span class="nav-text">2.1 工厂模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-构造函数模式"><span class="nav-text">2.2 构造函数模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-原型模式"><span class="nav-text">2.3 原型模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-组合使用构造函数模式和原型模式"><span class="nav-text">2.4 组合使用构造函数模式和原型模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-动态原型模式"><span class="nav-text">2.5 动态原型模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-6-寄生构造函数模式"><span class="nav-text">2.6 寄生构造函数模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-7-稳妥构造函数模式"><span class="nav-text">2.7 稳妥构造函数模式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、继承"><span class="nav-text">三、继承</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-概念"><span class="nav-text">3.1 概念</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1-prototype"><span class="nav-text">3.2.1 prototype</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-2-proto"><span class="nav-text">3.2.2 __proto__</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-3-constructor"><span class="nav-text">3.2.3 constructor</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-4-原型链"><span class="nav-text">3.2.4 原型链</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-组合继承"><span class="nav-text">3.2 组合继承</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-原型链继承"><span class="nav-text">3.3 原型链继承</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-寄生式继承"><span class="nav-text">3.4 寄生式继承</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-寄生组合式继承"><span class="nav-text">3.5 寄生组合式继承</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -337,20 +335,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
