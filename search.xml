@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Element-UI源码解析(1) - 组件库的整体设计</title>
+    <url>/2020/07/21/element-ui%E6%BA%90%E7%A0%81%E8%A7%A3%E8%A7%A3%E6%9E%90-1-%E7%BB%84%E4%BB%B6%E5%BA%93%E7%9A%84%E6%95%B4%E4%BD%93%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Element-UI源码解析</category>
+      </categories>
+      <tags>
+        <tag>Element</tag>
+        <tag>源码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端学习指南</title>
+    <url>/2020/06/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<p><img src="http://qcbnjhr05.bkt.clouddn.com/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB.jpg" alt=""></p>
+<a id="more"></a>
+<h4 id="一、HTML-CSS"><a href="#一、HTML-CSS" class="headerlink" title="一、HTML/CSS"></a>一、HTML/CSS</h4><h5 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h5><h5 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h5><ul>
+<li><a href="https://juejin.im/post/5b3b56a1e51d4519646204bb#heading-26" target="_blank" rel="noopener">css布局学习指南</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html" target="_blank" rel="noopener">css grid网格布局教程</a></li>
+</ul>
+<h4 id="二、JavaScript"><a href="#二、JavaScript" class="headerlink" title="二、JavaScript"></a>二、JavaScript</h4><h4 id="三、运行环境"><a href="#三、运行环境" class="headerlink" title="三、运行环境"></a>三、运行环境</h4><h4 id="四、计算机基础"><a href="#四、计算机基础" class="headerlink" title="四、计算机基础"></a>四、计算机基础</h4><h4 id="五、前端工程化"><a href="#五、前端工程化" class="headerlink" title="五、前端工程化"></a>五、前端工程化</h4><h4 id="六、框架和类库"><a href="#六、框架和类库" class="headerlink" title="六、框架和类库"></a>六、框架和类库</h4><h4 id="七、数据结构和算法"><a href="#七、数据结构和算法" class="headerlink" title="七、数据结构和算法"></a>七、数据结构和算法</h4><h4 id="八、后端技能"><a href="#八、后端技能" class="headerlink" title="八、后端技能"></a>八、后端技能</h4><h4 id="九、其他"><a href="#九、其他" class="headerlink" title="九、其他"></a>九、其他</h4>]]></content>
+      <tags>
+        <tag>学习计划</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>css实现经典布局</title>
+    <url>/2020/06/22/css%E5%AE%9E%E7%8E%B0%E7%BB%8F%E5%85%B8%E5%B8%83%E5%B1%80/</url>
+    <content><![CDATA[<h3 id="三栏布局"><a href="#三栏布局" class="headerlink" title="三栏布局"></a>三栏布局</h3><p>三栏布局的特点是：<strong>两边定宽、中间自适应。</strong><br>这里主要介绍三栏布局的两种实现方式，一种是圣杯布局，来源于文章<em>In Search of the Holy Grail</em>，另一种是双飞翼布局，来源于淘宝UED。</p>
+<a id="more"></a>
+<h4 id="1-圣杯布局"><a href="#1-圣杯布局" class="headerlink" title="1. 圣杯布局"></a>1. 圣杯布局</h4><p>特点：</p>
+<ol>
+<li>header 和 footer 宽度占满全屏；</li>
+<li>中间部分是一个三栏布局，两侧定宽，中间栏自适应；</li>
+<li>中间栏在DOM结构上优先，以便先行渲染；</li>
+<li>中间部分的高度是三栏中最高部分的高度。</li>
+</ol>
+<p>实现：</p>
+<h5 id="①-flex-实现"><a href="#①-flex-实现" class="headerlink" title="① flex 实现"></a>① flex 实现</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- DOM结构 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span>header<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>center<span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span>left<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>right<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span>footer<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* css */</span></span><br><span class="line"><span class="selector-class">.header</span>, <span class="selector-class">.footer</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>:lightgreen;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.center</span> &#123;</span><br><span class="line">  <span class="attribute">flex</span>: <span class="number">1</span>;</span><br><span class="line">  <span class="attribute">order</span>: <span class="number">1</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: lightskyblue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">20%</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: lightpink;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">  <span class="attribute">order</span>: <span class="number">2</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">20%</span>;</span><br><span class="line">  <span class="attribute">background-color</span>:lightpink;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="②-grid-实现"><a href="#②-grid-实现" class="headerlink" title="② grid 实现"></a>② grid 实现</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- DOM结构 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span>header<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>center<span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span>left<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>right<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span>footer<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* css */</span></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="attribute">grid-template-columns</span>: <span class="number">100px</span> auto <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">grid-template-rows</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">100px</span>);</span><br><span class="line">  <span class="attribute">grid-template-areas</span>: <span class="string">'header header header'</span></span><br><span class="line">                        <span class="string">'left center right'</span></span><br><span class="line">                        <span class="string">'footer footer footer'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>:lightgreen;</span><br><span class="line">  <span class="attribute">grid-area</span>: header;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.center</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: lightskyblue;</span><br><span class="line">  <span class="attribute">grid-area</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: lightpink;</span><br><span class="line">  <span class="attribute">grid-area</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>:lightpink;</span><br><span class="line">  <span class="attribute">grid-area</span>: right;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.footer</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>:lightgreen;</span><br><span class="line">  <span class="attribute">grid-area</span>: footer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="③-浮动-负margin实现"><a href="#③-浮动-负margin实现" class="headerlink" title="③ 浮动 + 负margin实现"></a>③ 浮动 + 负margin实现</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- DOM结构 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span>header<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>center<span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span>left<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>right<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span>footer<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* css */</span></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">min-width</span>: <span class="number">300px</span>; <span class="comment">/* 页面最小宽度 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.header</span>, <span class="selector-class">.footer</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>:lightgreen;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">100px</span>; <span class="comment">/* 给两侧预留空间 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.center</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: lightskyblue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span>, <span class="selector-class">.right</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: lightpink;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">  <span class="attribute">margin-right</span>: -<span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>该方法有几个需要注意的地方：</p>
+<ol>
+<li>中间center部分的宽度需要设置为100%，这是中间栏能做到自适应的关键。</li>
+<li>需要设置页面最小宽度。由于两侧都设置了固定的</li>
+</ol>
+<h4 id="2-双飞翼布局"><a href="#2-双飞翼布局" class="headerlink" title="2. 双飞翼布局"></a>2. 双飞翼布局</h4><p>特点：</p>
+<ol>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<p>实现：</p>
+<h4 id="3-两种布局方式的比较"><a href="#3-两种布局方式的比较" class="headerlink" title="3. 两种布局方式的比较"></a>3. 两种布局方式的比较</h4>]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>css实现水平垂直居中</title>
     <url>/2020/06/22/css%E5%AE%9E%E7%8E%B0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/</url>
     <content><![CDATA[<p>一个块级元素水平垂直居中的实现可以分为两大类，一类是元素固定宽高，另一类是元素不定宽高。</p>
@@ -109,72 +175,6 @@
       </categories>
       <tags>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>css实现经典布局</title>
-    <url>/2020/06/22/css%E5%AE%9E%E7%8E%B0%E7%BB%8F%E5%85%B8%E5%B8%83%E5%B1%80/</url>
-    <content><![CDATA[<h3 id="三栏布局"><a href="#三栏布局" class="headerlink" title="三栏布局"></a>三栏布局</h3><p>三栏布局的特点是：<strong>两边定宽、中间自适应。</strong><br>这里主要介绍三栏布局的两种实现方式，一种是圣杯布局，来源于文章<em>In Search of the Holy Grail</em>，另一种是双飞翼布局，来源于淘宝UED。</p>
-<a id="more"></a>
-<h4 id="1-圣杯布局"><a href="#1-圣杯布局" class="headerlink" title="1. 圣杯布局"></a>1. 圣杯布局</h4><p>特点：</p>
-<ol>
-<li>header 和 footer 宽度占满全屏；</li>
-<li>中间部分是一个三栏布局，两侧定宽，中间栏自适应；</li>
-<li>中间栏在DOM结构上优先，以便先行渲染；</li>
-<li>中间部分的高度是三栏中最高部分的高度。</li>
-</ol>
-<p>实现：</p>
-<h5 id="①-flex-实现"><a href="#①-flex-实现" class="headerlink" title="① flex 实现"></a>① flex 实现</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- DOM结构 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span>header<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>center<span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span>left<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>right<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span>footer<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* css */</span></span><br><span class="line"><span class="selector-class">.header</span>, <span class="selector-class">.footer</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>:lightgreen;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.center</span> &#123;</span><br><span class="line">  <span class="attribute">flex</span>: <span class="number">1</span>;</span><br><span class="line">  <span class="attribute">order</span>: <span class="number">1</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: lightskyblue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">20%</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: lightpink;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">  <span class="attribute">order</span>: <span class="number">2</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">20%</span>;</span><br><span class="line">  <span class="attribute">background-color</span>:lightpink;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="②-grid-实现"><a href="#②-grid-实现" class="headerlink" title="② grid 实现"></a>② grid 实现</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- DOM结构 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span>header<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>center<span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span>left<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>right<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span>footer<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* css */</span></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="attribute">grid-template-columns</span>: <span class="number">100px</span> auto <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">grid-template-rows</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">100px</span>);</span><br><span class="line">  <span class="attribute">grid-template-areas</span>: <span class="string">'header header header'</span></span><br><span class="line">                        <span class="string">'left center right'</span></span><br><span class="line">                        <span class="string">'footer footer footer'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>:lightgreen;</span><br><span class="line">  <span class="attribute">grid-area</span>: header;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.center</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: lightskyblue;</span><br><span class="line">  <span class="attribute">grid-area</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: lightpink;</span><br><span class="line">  <span class="attribute">grid-area</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>:lightpink;</span><br><span class="line">  <span class="attribute">grid-area</span>: right;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.footer</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>:lightgreen;</span><br><span class="line">  <span class="attribute">grid-area</span>: footer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h5 id="③-浮动-负margin实现"><a href="#③-浮动-负margin实现" class="headerlink" title="③ 浮动 + 负margin实现"></a>③ 浮动 + 负margin实现</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- DOM结构 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span>header<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>center<span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span>left<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>right<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span>footer<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* css */</span></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">min-width</span>: <span class="number">300px</span>; <span class="comment">/* 页面最小宽度 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.header</span>, <span class="selector-class">.footer</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>:lightgreen;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">100px</span>; <span class="comment">/* 给两侧预留空间 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.center</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: lightskyblue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span>, <span class="selector-class">.right</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: lightpink;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">  <span class="attribute">margin-right</span>: -<span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>该方法有几个需要注意的地方：</p>
-<ol>
-<li>中间center部分的宽度需要设置为100%，这是中间栏能做到自适应的关键。</li>
-<li>需要设置页面最小宽度。由于两侧都设置了固定的</li>
-</ol>
-<h4 id="2-双飞翼布局"><a href="#2-双飞翼布局" class="headerlink" title="2. 双飞翼布局"></a>2. 双飞翼布局</h4><p>特点：</p>
-<ol>
-<li></li>
-<li></li>
-<li></li>
-</ol>
-<p>实现：</p>
-<h4 id="3-两种布局方式的比较"><a href="#3-两种布局方式的比较" class="headerlink" title="3. 两种布局方式的比较"></a>3. 两种布局方式的比较</h4>]]></content>
-      <categories>
-        <category>CSS</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Element-UI源码解析(1) - 组件库的整体设计</title>
-    <url>/2020/07/21/element-ui%E6%BA%90%E7%A0%81%E8%A7%A3%E8%A7%A3%E6%9E%90-1-%E7%BB%84%E4%BB%B6%E5%BA%93%E7%9A%84%E6%95%B4%E4%BD%93%E8%AE%BE%E8%AE%A1/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Element-UI源码解析</category>
-      </categories>
-      <tags>
-        <tag>Element</tag>
-        <tag>源码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前端学习指南</title>
-    <url>/2020/06/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<p><img src="http://qcbnjhr05.bkt.clouddn.com/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB.jpg" alt=""></p>
-<a id="more"></a>
-<h4 id="一、HTML-CSS"><a href="#一、HTML-CSS" class="headerlink" title="一、HTML/CSS"></a>一、HTML/CSS</h4><h5 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h5><h5 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h5><ul>
-<li><a href="https://juejin.im/post/5b3b56a1e51d4519646204bb#heading-26" target="_blank" rel="noopener">css布局学习指南</a></li>
-<li><a href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html" target="_blank" rel="noopener">css grid网格布局教程</a></li>
-</ul>
-<h4 id="二、JavaScript"><a href="#二、JavaScript" class="headerlink" title="二、JavaScript"></a>二、JavaScript</h4><h4 id="三、运行环境"><a href="#三、运行环境" class="headerlink" title="三、运行环境"></a>三、运行环境</h4><h4 id="四、计算机基础"><a href="#四、计算机基础" class="headerlink" title="四、计算机基础"></a>四、计算机基础</h4><h4 id="五、前端工程化"><a href="#五、前端工程化" class="headerlink" title="五、前端工程化"></a>五、前端工程化</h4><h4 id="六、框架和类库"><a href="#六、框架和类库" class="headerlink" title="六、框架和类库"></a>六、框架和类库</h4><h4 id="七、数据结构和算法"><a href="#七、数据结构和算法" class="headerlink" title="七、数据结构和算法"></a>七、数据结构和算法</h4><h4 id="八、后端技能"><a href="#八、后端技能" class="headerlink" title="八、后端技能"></a>八、后端技能</h4><h4 id="九、其他"><a href="#九、其他" class="headerlink" title="九、其他"></a>九、其他</h4>]]></content>
-      <tags>
-        <tag>学习计划</tag>
       </tags>
   </entry>
   <entry>
@@ -765,6 +765,36 @@ wacth：更多的是「观察」的作用。观察的是属性值，只要属性
       </tags>
   </entry>
   <entry>
+    <title>问题记录</title>
+    <url>/2020/07/14/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p><strong>Q1、npm连接超时问题</strong></p>
+<p>配置淘宝镜像</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<p>配置代理</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set proxy http:&#x2F;&#x2F;[ip]:[port]</span><br><span class="line">npm config set https-proxy http:&#x2F;&#x2F;[ip]:[port]</span><br></pre></td></tr></table></figure>
+
+<p>查看npm配置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config list</span><br></pre></td></tr></table></figure>
+
+<p>清除代理配置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config delete proxy</span><br><span class="line">npm config delete https-proxy</span><br></pre></td></tr></table></figure>
+
+<p><strong>Q2、使用vue-cli3创建项目时git bash不能选择的问题</strong></p>
+<p>使用 <code>winpty vue.cmd create hello-world</code> 命令创建项目</p>
+<p><strong>Q3、cross-env库</strong></p>
+<p><strong>Q4、vue create长时间没反应</strong></p>
+<p><strong>Q5、vue引入文件，如何省略后缀</strong></p>
+<p><strong>Q6、vue项目的构建过程</strong></p>
+<p><strong>Q7、html-webpack-plugin</strong></p>
+<p><strong>Q8、cwd与__dirname的区别</strong></p>
+<p><strong>Q9、router-link 的 <code>active-class</code> 和 <code>exact</code> 属性</strong></p>
+]]></content>
+      <tags>
+        <tag>work</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>手写JS系列</title>
     <url>/2020/06/12/%E6%89%8B%E5%86%99JS%E7%B3%BB%E5%88%97/</url>
     <content><![CDATA[<h4 id="1-bind"><a href="#1-bind" class="headerlink" title="1. bind"></a>1. bind</h4><h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><blockquote>
@@ -887,36 +917,6 @@ wacth：更多的是「观察」的作用。观察的是属性值，只要属性
       </categories>
       <tags>
         <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>问题记录</title>
-    <url>/2020/07/14/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<p><strong>Q1、npm连接超时问题</strong></p>
-<p>配置淘宝镜像</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<p>配置代理</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set proxy http:&#x2F;&#x2F;[ip]:[port]</span><br><span class="line">npm config set https-proxy http:&#x2F;&#x2F;[ip]:[port]</span><br></pre></td></tr></table></figure>
-
-<p>查看npm配置</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config list</span><br></pre></td></tr></table></figure>
-
-<p>清除代理配置</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config delete proxy</span><br><span class="line">npm config delete https-proxy</span><br></pre></td></tr></table></figure>
-
-<p><strong>Q2、使用vue-cli3创建项目时git bash不能选择的问题</strong></p>
-<p>使用 <code>winpty vue.cmd create hello-world</code> 命令创建项目</p>
-<p><strong>Q3、cross-env库</strong></p>
-<p><strong>Q4、vue create长时间没反应</strong></p>
-<p><strong>Q5、vue引入文件，如何省略后缀</strong></p>
-<p><strong>Q6、vue项目的构建过程</strong></p>
-<p><strong>Q7、html-webpack-plugin</strong></p>
-<p><strong>Q8、cwd与__dirname的区别</strong></p>
-<p><strong>Q9、router-link 的 <code>active-class</code> 和 <code>exact</code> 属性</strong></p>
-]]></content>
-      <tags>
-        <tag>work</tag>
       </tags>
   </entry>
 </search>
