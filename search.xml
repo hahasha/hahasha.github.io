@@ -152,39 +152,16 @@
       </tags>
   </entry>
   <entry>
-    <title>基于vue的UI组件库开发流程</title>
-    <url>/2020/07/07/%E5%9F%BA%E4%BA%8Evue%E7%9A%84UI%E7%BB%84%E4%BB%B6%E5%BA%93%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<ol>
-<li><p>用脚手架搭建开发环境</p>
-</li>
-<li><p>规划目录结构</p>
-<ul>
-<li><p>build 用来存放构建相关的脚本和配置</p>
-</li>
-<li><p>packages 用来存放编写的组件</p>
-</li>
-<li><p>examples 用来存放文档和demo </p>
-</li>
-<li><p>两个问题：</p>
-<ol>
-<li>配置webpack，将编译入口由原先的src改为examples</li>
-<li>babel-loader</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p>如何编写文档</p>
-<ul>
-<li>vue-markdown-loader</li>
-</ul>
-</li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>使用css绘制几何图形（三角形、圆形、菱形等）</title>
-    <url>/2020/06/22/%E4%BD%BF%E7%94%A8css%E7%BB%98%E5%88%B6%E5%87%A0%E4%BD%95%E5%9B%BE%E5%BD%A2%EF%BC%88%E4%B8%89%E8%A7%92%E5%BD%A2%E3%80%81%E5%9C%86%E5%BD%A2%E3%80%81%E8%8F%B1%E5%BD%A2%E7%AD%89%EF%BC%89/</url>
+    <title>Element-UI源码解析(1) - 组件库的整体设计</title>
+    <url>/2020/07/21/element-ui%E6%BA%90%E7%A0%81%E8%A7%A3%E8%A7%A3%E6%9E%90-1-%E7%BB%84%E4%BB%B6%E5%BA%93%E7%9A%84%E6%95%B4%E4%BD%93%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>Element-UI源码解析</category>
+      </categories>
+      <tags>
+        <tag>Element</tag>
+        <tag>源码</tag>
+      </tags>
   </entry>
   <entry>
     <title>前端学习指南</title>
@@ -201,18 +178,7 @@
       </tags>
   </entry>
   <entry>
-    <title>手写jQuery系列</title>
-    <url>/2020/06/14/%E6%89%8B%E5%86%99jQuery%E7%B3%BB%E5%88%97/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>jQuery</category>
-      </categories>
-      <tags>
-        <tag>jQuery</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前端面试篇</title>
+    <title>前端面试题整理</title>
     <url>/2020/06/16/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E7%AF%87/</url>
     <content><![CDATA[<h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><ul>
 <li>viewport</li>
@@ -921,6 +887,36 @@ wacth：更多的是「观察」的作用。观察的是属性值，只要属性
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>问题记录</title>
+    <url>/2020/07/14/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p><strong>Q1、npm连接超时问题</strong></p>
+<p>配置淘宝镜像</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<p>配置代理</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set proxy http:&#x2F;&#x2F;[ip]:[port]</span><br><span class="line">npm config set https-proxy http:&#x2F;&#x2F;[ip]:[port]</span><br></pre></td></tr></table></figure>
+
+<p>查看npm配置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config list</span><br></pre></td></tr></table></figure>
+
+<p>清除代理配置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config delete proxy</span><br><span class="line">npm config delete https-proxy</span><br></pre></td></tr></table></figure>
+
+<p><strong>Q2、使用vue-cli3创建项目时git bash不能选择的问题</strong></p>
+<p>使用 <code>winpty vue.cmd create hello-world</code> 命令创建项目</p>
+<p><strong>Q3、cross-env库</strong></p>
+<p><strong>Q4、vue create长时间没反应</strong></p>
+<p><strong>Q5、vue引入文件，如何省略后缀</strong></p>
+<p><strong>Q6、vue项目的构建过程</strong></p>
+<p><strong>Q7、html-webpack-plugin</strong></p>
+<p><strong>Q8、cwd与__dirname的区别</strong></p>
+<p><strong>Q9、router-link 的 <code>active-class</code> 和 <code>exact</code> 属性</strong></p>
+]]></content>
+      <tags>
+        <tag>work</tag>
       </tags>
   </entry>
 </search>
