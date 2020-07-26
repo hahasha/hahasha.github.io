@@ -13,20 +13,6 @@
       </tags>
   </entry>
   <entry>
-    <title>前端学习指南</title>
-    <url>/2020/06/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<p><img src="http://qcbnjhr05.bkt.clouddn.com/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB.jpg" alt=""></p>
-<a id="more"></a>
-<h4 id="一、HTML-CSS"><a href="#一、HTML-CSS" class="headerlink" title="一、HTML/CSS"></a>一、HTML/CSS</h4><h5 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h5><h5 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h5><ul>
-<li><a href="https://juejin.im/post/5b3b56a1e51d4519646204bb#heading-26" target="_blank" rel="noopener">css布局学习指南</a></li>
-<li><a href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html" target="_blank" rel="noopener">css grid网格布局教程</a></li>
-</ul>
-<h4 id="二、JavaScript"><a href="#二、JavaScript" class="headerlink" title="二、JavaScript"></a>二、JavaScript</h4><h4 id="三、运行环境"><a href="#三、运行环境" class="headerlink" title="三、运行环境"></a>三、运行环境</h4><h4 id="四、计算机基础"><a href="#四、计算机基础" class="headerlink" title="四、计算机基础"></a>四、计算机基础</h4><h4 id="五、前端工程化"><a href="#五、前端工程化" class="headerlink" title="五、前端工程化"></a>五、前端工程化</h4><h4 id="六、框架和类库"><a href="#六、框架和类库" class="headerlink" title="六、框架和类库"></a>六、框架和类库</h4><h4 id="七、数据结构和算法"><a href="#七、数据结构和算法" class="headerlink" title="七、数据结构和算法"></a>七、数据结构和算法</h4><h4 id="八、后端技能"><a href="#八、后端技能" class="headerlink" title="八、后端技能"></a>八、后端技能</h4><h4 id="九、其他"><a href="#九、其他" class="headerlink" title="九、其他"></a>九、其他</h4>]]></content>
-      <tags>
-        <tag>学习计划</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>css实现经典布局</title>
     <url>/2020/06/22/css%E5%AE%9E%E7%8E%B0%E7%BB%8F%E5%85%B8%E5%B8%83%E5%B1%80/</url>
     <content><![CDATA[<h3 id="三栏布局"><a href="#三栏布局" class="headerlink" title="三栏布局"></a>三栏布局</h3><p>三栏布局的特点是：<strong>两边定宽、中间自适应。</strong><br>这里主要介绍三栏布局的两种实现方式，一种是圣杯布局，来源于文章<em>In Search of the Holy Grail</em>，另一种是双飞翼布局，来源于淘宝UED。</p>
@@ -175,6 +161,98 @@
       </categories>
       <tags>
         <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端学习指南</title>
+    <url>/2020/06/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<p><img src="http://qcbnjhr05.bkt.clouddn.com/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB.jpg" alt=""></p>
+<a id="more"></a>
+<h4 id="一、HTML-CSS"><a href="#一、HTML-CSS" class="headerlink" title="一、HTML/CSS"></a>一、HTML/CSS</h4><h5 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h5><h5 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h5><ul>
+<li><a href="https://juejin.im/post/5b3b56a1e51d4519646204bb#heading-26" target="_blank" rel="noopener">css布局学习指南</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html" target="_blank" rel="noopener">css grid网格布局教程</a></li>
+</ul>
+<h4 id="二、JavaScript"><a href="#二、JavaScript" class="headerlink" title="二、JavaScript"></a>二、JavaScript</h4><h4 id="三、运行环境"><a href="#三、运行环境" class="headerlink" title="三、运行环境"></a>三、运行环境</h4><h4 id="四、计算机基础"><a href="#四、计算机基础" class="headerlink" title="四、计算机基础"></a>四、计算机基础</h4><h4 id="五、前端工程化"><a href="#五、前端工程化" class="headerlink" title="五、前端工程化"></a>五、前端工程化</h4><h4 id="六、框架和类库"><a href="#六、框架和类库" class="headerlink" title="六、框架和类库"></a>六、框架和类库</h4><h4 id="七、数据结构和算法"><a href="#七、数据结构和算法" class="headerlink" title="七、数据结构和算法"></a>七、数据结构和算法</h4><h4 id="八、后端技能"><a href="#八、后端技能" class="headerlink" title="八、后端技能"></a>八、后端技能</h4><h4 id="九、其他"><a href="#九、其他" class="headerlink" title="九、其他"></a>九、其他</h4>]]></content>
+      <tags>
+        <tag>学习计划</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>H3C组件库开发问题记录</title>
+    <url>/2020/07/14/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h3 id="一、npm相关"><a href="#一、npm相关" class="headerlink" title="一、npm相关"></a>一、npm相关</h3><p>1、npm连接超时问题</p>
+<p>配置淘宝镜像</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<p>配置代理</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set proxy http:&#x2F;&#x2F;[ip]:[port]</span><br><span class="line">npm config set https-proxy http:&#x2F;&#x2F;[ip]:[port]</span><br></pre></td></tr></table></figure>
+
+<p>查看npm配置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config list</span><br></pre></td></tr></table></figure>
+
+<p>清除代理配置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config delete proxy</span><br><span class="line">npm config delete https-proxy</span><br></pre></td></tr></table></figure>
+
+<h3 id="二、vue相关"><a href="#二、vue相关" class="headerlink" title="二、vue相关"></a>二、vue相关</h3><p>1、使用vue-cli3创建项目时git bash不能选择的问题</p>
+<blockquote>
+<p>使用 <code>winpty vue.cmd create hello-world</code> 命令创建项目</p>
+</blockquote>
+<p>2、vue create长时间没反应</p>
+<blockquote>
+<p>修改.vuerc文件的useTaobaoRegistry为true</p>
+</blockquote>
+<p>3、vue项目的构建过程</p>
+<p>4、router-link 的 <code>active-class</code> 和 <code>exact</code> 属性</p>
+<p>5、dispatch 和 broadcast</p>
+<p>6、inject 和 provide</p>
+<p>7、如何在组件上使用v-model</p>
+<blockquote>
+<p>① 将value特性绑定到value的prop上<br>② 在input被触发时，将新的值通过自定义的input事件抛出</p>
+</blockquote>
+<p>8、$attrs 和 $listeners</p>
+<p>9、role属性</p>
+<p>10、自定义指令</p>
+<p>11、.native修饰符</p>
+<h3 id="三、webpack相关"><a href="#三、webpack相关" class="headerlink" title="三、webpack相关"></a>三、webpack相关</h3><p>1、cross-env库</p>
+<p>2、vue引入文件，如何省略后缀</p>
+<p>3、html-webpack-plugin</p>
+<h3 id="四、node相关"><a href="#四、node相关" class="headerlink" title="四、node相关"></a>四、node相关</h3><p>1、cwd与__dirname的区别</p>
+<h3 id="五、css相关"><a href="#五、css相关" class="headerlink" title="五、css相关"></a>五、css相关</h3><p>1、BEM class命名规则</p>
+<p>2、sass基本语法</p>
+<p>3、postcss</p>
+<p>4、:not()</p>
+<blockquote>
+<p>css伪类，用来匹配不符合一组选择器的元素</p>
+</blockquote>
+<h3 id="六、git命令"><a href="#六、git命令" class="headerlink" title="六、git命令"></a>六、git命令</h3><p>1、git stash</p>
+<h3 id="七、linux命令"><a href="#七、linux命令" class="headerlink" title="七、linux命令"></a>七、linux命令</h3><p>1、下载文件：wget</p>
+<blockquote>
+<p>wget命令用来从指定url下载文件<br>wget -c 继续执行上次终端的任务</p>
+</blockquote>
+<p>2、查看当前目录：pwd</p>
+<h3 id="八、nginx相关"><a href="#八、nginx相关" class="headerlink" title="八、nginx相关"></a>八、nginx相关</h3><p>1、修改配置文件后重新加载文件</p>
+<blockquote>
+<p>进入sbin目录下，执行 <code>./nginx -s reload</code></p>
+</blockquote>
+<h3 id="九、业务相关"><a href="#九、业务相关" class="headerlink" title="九、业务相关"></a>九、业务相关</h3><p>1、组件开发的目的</p>
+<blockquote>
+<p>① 提高复用性<br>② 解耦<br>③ 提高开发效率</p>
+</blockquote>
+<p>2、icon组件的创建过程</p>
+<blockquote>
+<p>① 引入字体图标文件（.ttf .woff .css）<br>② 创建icon.vue组件，使用<i :class="'h-icon-' + name"></i>模板<br>③ icon.md相关</p>
+<ul>
+<li>创建iconInit.js，用于创建包含所有icon name的json文件。</li>
+<li>entry中引入icon.json文件，绑定到vue原型上，便于展示icon列表集合。</li>
+</ul>
+</blockquote>
+<p>3、怎么判断一个layout布局中有没有侧边栏？</p>
+<blockquote>
+<p>使用vnode的componentOptions.tag判断</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -762,36 +840,6 @@ wacth：更多的是「观察」的作用。观察的是属性值，只要属性
       </categories>
       <tags>
         <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>问题记录</title>
-    <url>/2020/07/14/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<p><strong>Q1、npm连接超时问题</strong></p>
-<p>配置淘宝镜像</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<p>配置代理</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set proxy http:&#x2F;&#x2F;[ip]:[port]</span><br><span class="line">npm config set https-proxy http:&#x2F;&#x2F;[ip]:[port]</span><br></pre></td></tr></table></figure>
-
-<p>查看npm配置</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config list</span><br></pre></td></tr></table></figure>
-
-<p>清除代理配置</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config delete proxy</span><br><span class="line">npm config delete https-proxy</span><br></pre></td></tr></table></figure>
-
-<p><strong>Q2、使用vue-cli3创建项目时git bash不能选择的问题</strong></p>
-<p>使用 <code>winpty vue.cmd create hello-world</code> 命令创建项目</p>
-<p><strong>Q3、cross-env库</strong></p>
-<p><strong>Q4、vue create长时间没反应</strong></p>
-<p><strong>Q5、vue引入文件，如何省略后缀</strong></p>
-<p><strong>Q6、vue项目的构建过程</strong></p>
-<p><strong>Q7、html-webpack-plugin</strong></p>
-<p><strong>Q8、cwd与__dirname的区别</strong></p>
-<p><strong>Q9、router-link 的 <code>active-class</code> 和 <code>exact</code> 属性</strong></p>
-]]></content>
-      <tags>
-        <tag>work</tag>
       </tags>
   </entry>
   <entry>
